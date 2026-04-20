@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Roshan Vishwakarma</title>
+    <meta name="description" content="Full project portfolio of Roshan Vishwakarma — web apps, AI tools, and more.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-badge">RV</span>
+            <span class="logo-name">Roshan<span>.dev</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="exp.html">Experience</a></li>
+            <li><a href="ach.html">Achievements</a></li>
+            <li><a href="contacts.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <div class="page-hero">
+        <span class="section-label">Portfolio</span>
+        <h1 class="gradient-text">My Projects</h1>
+        <p>A curated showcase of things I've built — from full-stack applications to AI experiments.</p>
+    </div>
+
+    <section class="section">
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Projects</button>
+            <button class="filter-tab" data-filter="web">Web Dev</button>
+            <button class="filter-tab" data-filter="ai">AI / ML</button>
+            <button class="filter-tab" data-filter="fullstack">Full Stack</button>
+            <button class="filter-tab" data-filter="design">Design</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card fade-in" data-category="web design">
+                <div class="project-img">
+                    <img src="media/b5a37827-93ed-4e8a-bd8d-29b2979ae29e.jpeg" alt="Binary Vision"
+                         onerror="this.src='https://via.placeholder.com/400x200/7c6aff/ffffff?text=Binary+Vision'">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Binary Vision</h3>
+                    <p>A conceptual branding and digital identity project — designing a cohesive visual language for a fictional tech startup, including logo, typography system, and interactive landing page.</p>
+                    <div class="project-tags">
+                        <span>Web Design</span>
+                        <span>Branding</span>
+                        <span>UI/UX</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card fade-in" data-category="fullstack web">
+                <div class="project-img">
+                    <img src="media/883a7623-22e8-4e24-8e99-8c4a82accf51.jpeg" alt="Collab Editor"
+                         onerror="this.src='https://via.placeholder.com/400x200/38bdf8/ffffff?text=Collab+Editor'">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Real-Time Collab Editor</h3>
+                    <p>A browser-based collaborative document and code editor supporting simultaneous multi-user editing with live cursor tracking, powered by WebSockets and a Node.js backend.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>WebSockets</span>
+                        <span>Node.js</span>
+                        <span>Full Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card fade-in" data-category="ai">
+                <div class="project-img">
+                    <img src="media/3616db8d-fa85-4683-8647-6f6e8dc8814c.jpeg" alt="AI Image Gen"
+                         onerror="this.src='https://via.placeholder.com/400x200/c084fc/ffffff?text=AI+Suite'">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Image Generation Suite</h3>
+                    <p>A Python pipeline integrating Stable Diffusion models with custom prompt engineering to generate professional-grade studio portraits and fantasy character artwork at scale.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Stable Diffusion</span>
+                        <span>Prompt Eng.</span>
+                        <span>AI / ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Case Study <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 — Placeholder for future project -->
+            <div class="project-card fade-in" data-category="fullstack web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x200/0f172a/38bdf8?text=Task+Manager" alt="Task Manager">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Smart Task Manager</h3>
+                    <p>A productivity web app with drag-and-drop Kanban boards, deadline reminders, and AI-powered task prioritisation. Built as a full-stack project with React and Express.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Express</span>
+                        <span>MySQL</span>
+                        <span>Full Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Coming Soon <i class="fas fa-clock"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card fade-in" data-category="ai web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x200/0f172a/7c6aff?text=Chatbot+UI" alt="Chatbot">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Contextual AI Chatbot</h3>
+                    <p>A conversational AI interface with persistent context, streaming responses, and code-highlighting support — built with vanilla JS and OpenAI-compatible API integrations.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>GenAI</span>
+                        <span>API</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card fade-in" data-category="design web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x200/0f172a/c084fc?text=Portfolio+v1" alt="Portfolio">
+                    <div class="project-img-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Developer Portfolio v1</h3>
+                    <p>The first iteration of this very portfolio — a responsive single-page site built from scratch in HTML, CSS, and vanilla JavaScript with no frameworks.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">Live Site <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── CTA BANNER ── -->
+    <section class="section" style="padding-top:0;">
+        <div class="availability-banner fade-in">
+            <div class="availability-text">
+                <span class="avail-dot"></span>
+                <p><strong>Have a project in mind?</strong> <span>I'm open to freelance work and full-time opportunities.</span></p>
+            </div>
+            <a href="contacts.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- ── CONNECT WITH ME ── -->
+    <div class="connect-banner">
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p>Like what you see? I'm open to full-time roles, freelance work, and creative collaborations.</p>
+        <div class="connect-links">
+            <a href="contacts.html" class="connect-link primary"><i class="fas fa-paper-plane"></i> Send a Message</a>
+            <a href="mailto:roshan@example.com" class="connect-link"><i class="fas fa-envelope"></i> roshan@example.com</a>
+            <a href="https://linkedin.com/in/roshan" target="_blank" class="connect-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/roshan" target="_blank" class="connect-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>© 2025 Roshan Vishwakarma. All Rights Reserved.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
