@@ -164,7 +164,7 @@ if (contactForm) {
             btn.type = 'button';
 
             const mailtoHandler = () => {
-                window.location.href = 'mailto:roshan@example.com';
+                window.location.href = 'mailto:roshanvishwakarma1166@gmail.com';
             };
             btn.addEventListener('click', mailtoHandler, { once: true });
 
