@@ -25,6 +25,7 @@
         <button class="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     </nav>
 
+    <main>
     <div class="page-hero">
         <span class="section-label">Get In Touch</span>
         <h1 class="gradient-text">Let's Connect</h1>
@@ -86,11 +87,11 @@
                             <div style="font-size:0.8rem;">Mumbai, Maharashtra · Open to Remote</div>
                         </div>
                     </a>
-                    <a href="#" class="contact-link">
+                    <a href="media/resume.pdf" target="_blank" class="contact-link" download>
                         <i class="fas fa-file-pdf"></i>
                         <div>
                             <div style="font-weight:600; font-size:0.88rem; color:var(--text);">Resume / CV</div>
-                            <div style="font-size:0.8rem;">Download PDF (Replace with your link)</div>
+                            <div style="font-size:0.8rem;">Download PDF</div>
                         </div>
                     </a>
                 </div>
@@ -151,26 +152,54 @@
             <h2 class="section-title">Common Questions</h2>
         </div>
 
-        <div style="max-width: 700px; margin: 0 auto; display:flex; flex-direction:column; gap:1rem;">
+        <div class="accordion" style="max-width: 700px; margin: 0 auto;">
 
-            <div class="timeline-content fade-in" style="border-radius:var(--radius);">
-                <h3 style="font-size:0.95rem; margin-bottom:0.4rem;">Are you open to remote work?</h3>
-                <p>Yes, absolutely. I'm comfortable working fully remote, hybrid, or on-site in Mumbai. I'm also open to relocation for the right opportunity.</p>
+            <div class="accordion-item fade-in">
+                <button class="accordion-header">
+                    Are you open to remote work?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        Yes, absolutely. I'm comfortable working fully remote, hybrid, or on-site in Mumbai. I'm also open to relocation for the right opportunity.
+                    </div>
+                </div>
             </div>
 
-            <div class="timeline-content fade-in" style="border-radius:var(--radius);">
-                <h3 style="font-size:0.95rem; margin-bottom:0.4rem;">What type of roles are you looking for?</h3>
-                <p>I'm targeting SDE-1 / Junior Developer roles in web development (frontend, backend, or full-stack). I'm also open to AI/ML adjacent engineering positions.</p>
+            <div class="accordion-item fade-in">
+                <button class="accordion-header">
+                    What type of roles are you looking for?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        I'm targeting SDE-1 / Junior Developer roles in web development (frontend, backend, or full-stack). I'm also open to AI/ML adjacent engineering positions.
+                    </div>
+                </div>
             </div>
 
-            <div class="timeline-content fade-in" style="border-radius:var(--radius);">
-                <h3 style="font-size:0.95rem; margin-bottom:0.4rem;">Do you take on freelance projects?</h3>
-                <p>Yes — I'm available for freelance web development projects. Please reach out with your brief and timeline and I'll let you know about availability.</p>
+            <div class="accordion-item fade-in">
+                <button class="accordion-header">
+                    Do you take on freelance projects?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        Yes — I'm available for freelance web development projects. Please reach out with your brief and timeline and I'll let you know about availability.
+                    </div>
+                </div>
             </div>
 
-            <div class="timeline-content fade-in" style="border-radius:var(--radius);">
-                <h3 style="font-size:0.95rem; margin-bottom:0.4rem;">What is your notice period?</h3>
-                <p>I'm currently available immediately. I can start a new role with minimal notice.</p>
+            <div class="accordion-item fade-in">
+                <button class="accordion-header">
+                    What is your notice period?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-body">
+                        I'm currently available immediately. I can start a new role with minimal notice.
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -181,12 +210,14 @@
         <h2>Other Ways to <span class="gradient-text">Reach Me</span></h2>
         <p>Prefer a different channel? Find me on any of the platforms below.</p>
         <div class="connect-links">
-            <a href="mailto:roshan@example.com" class="connect-link primary"><i class="fas fa-envelope"></i> roshan@example.com</a>
+            <a href="media/resume.pdf" target="_blank" class="connect-link primary" download><i class="fas fa-download"></i> Download Resume</a>
+            <a href="mailto:roshan@example.com" class="connect-link"><i class="fas fa-envelope"></i> roshan@example.com</a>
             <a href="https://linkedin.com/in/roshan" target="_blank" class="connect-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
             <a href="https://github.com/roshan" target="_blank" class="connect-link"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://twitter.com/roshan" target="_blank" class="connect-link"><i class="fab fa-twitter"></i> Twitter / X</a>
         </div>
     </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-left">

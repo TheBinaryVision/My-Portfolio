@@ -25,6 +25,8 @@
         <button class="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
     </nav>
 
+    <!-- ── PROJECTS HERO ── -->
+    <main>
     <div class="page-hero">
         <span class="section-label">Portfolio</span>
         <h1 class="gradient-text">My Projects</h1>
@@ -36,17 +38,17 @@
         <!-- Filter Tabs -->
         <div class="filter-tabs">
             <button class="filter-tab active" data-filter="all">All Projects</button>
-            <button class="filter-tab" data-filter="web">Web Dev</button>
-            <button class="filter-tab" data-filter="ai">AI / ML</button>
-            <button class="filter-tab" data-filter="fullstack">Full Stack</button>
-            <button class="filter-tab" data-filter="design">Design</button>
+            <button class="filter-tab" data-filter="completed">Completed</button>
+            <button class="filter-tab" data-filter="working">Working</button>
+            <button class="filter-tab" data-filter="grouped">Grouped</button>
+            <button class="filter-tab" data-filter="single">Single</button>
         </div>
 
         <!-- Projects Grid -->
         <div class="projects-grid">
 
             <!-- Project 1 -->
-            <div class="project-card fade-in" data-category="web design">
+            <div class="project-card fade-in" data-category="completed single">
                 <div class="project-img">
                     <img src="media/b5a37827-93ed-4e8a-bd8d-29b2979ae29e.jpeg" alt="Binary Vision"
                          onerror="this.src='https://via.placeholder.com/400x200/7c6aff/ffffff?text=Binary+Vision'">
@@ -54,6 +56,7 @@
                 </div>
                 <div class="project-content">
                     <h3>Binary Vision</h3>
+                    <span class="success-tag"><i class="fas fa-chart-line"></i> 98% Success Rate</span>
                     <p>A conceptual branding and digital identity project — designing a cohesive visual language for a fictional tech startup, including logo, typography system, and interactive landing page.</p>
                     <div class="project-tags">
                         <span>Web Design</span>
@@ -62,14 +65,14 @@
                         <span>CSS</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card fade-in" data-category="fullstack web">
+            <div class="project-card fade-in" data-category="completed grouped">
                 <div class="project-img">
                     <img src="media/883a7623-22e8-4e24-8e99-8c4a82accf51.jpeg" alt="Collab Editor"
                          onerror="this.src='https://via.placeholder.com/400x200/38bdf8/ffffff?text=Collab+Editor'">
@@ -77,6 +80,7 @@
                 </div>
                 <div class="project-content">
                     <h3>Real-Time Collab Editor</h3>
+                    <span class="success-tag"><i class="fas fa-chart-line"></i> 95% Success Rate</span>
                     <p>A browser-based collaborative document and code editor supporting simultaneous multi-user editing with live cursor tracking, powered by WebSockets and a Node.js backend.</p>
                     <div class="project-tags">
                         <span>JavaScript</span>
@@ -85,14 +89,14 @@
                         <span>Full Stack</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="project-card fade-in" data-category="ai">
+            <div class="project-card fade-in" data-category="completed single">
                 <div class="project-img">
                     <img src="media/3616db8d-fa85-4683-8647-6f6e8dc8814c.jpeg" alt="AI Image Gen"
                          onerror="this.src='https://via.placeholder.com/400x200/c084fc/ffffff?text=AI+Suite'">
@@ -100,6 +104,7 @@
                 </div>
                 <div class="project-content">
                     <h3>AI Image Generation Suite</h3>
+                    <span class="success-tag"><i class="fas fa-chart-line"></i> 92% Success Rate</span>
                     <p>A Python pipeline integrating Stable Diffusion models with custom prompt engineering to generate professional-grade studio portraits and fantasy character artwork at scale.</p>
                     <div class="project-tags">
                         <span>Python</span>
@@ -108,20 +113,21 @@
                         <span>AI / ML</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="link-btn">Case Study <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn">Case Study <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 4 — Placeholder for future project -->
-            <div class="project-card fade-in" data-category="fullstack web">
+            <div class="project-card fade-in" data-category="working grouped">
                 <div class="project-img">
                     <img src="https://via.placeholder.com/400x200/0f172a/38bdf8?text=Task+Manager" alt="Task Manager">
                     <div class="project-img-overlay"></div>
                 </div>
                 <div class="project-content">
                     <h3>Smart Task Manager</h3>
+                    <span class="success-tag" style="color:var(--warning); background:var(--warning-bg); border-color:var(--warning);"><i class="fas fa-hammer"></i> In Progress</span>
                     <p>A productivity web app with drag-and-drop Kanban boards, deadline reminders, and AI-powered task prioritisation. Built as a full-stack project with React and Express.</p>
                     <div class="project-tags">
                         <span>React</span>
@@ -131,19 +137,20 @@
                     </div>
                     <div class="project-links">
                         <a href="#" class="link-btn">Coming Soon <i class="fas fa-clock"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 5 -->
-            <div class="project-card fade-in" data-category="ai web">
+            <div class="project-card fade-in" data-category="completed single">
                 <div class="project-img">
                     <img src="https://via.placeholder.com/400x200/0f172a/7c6aff?text=Chatbot+UI" alt="Chatbot">
                     <div class="project-img-overlay"></div>
                 </div>
                 <div class="project-content">
                     <h3>Contextual AI Chatbot</h3>
+                    <span class="success-tag"><i class="fas fa-chart-line"></i> 88% Success Rate</span>
                     <p>A conversational AI interface with persistent context, streaming responses, and code-highlighting support — built with vanilla JS and OpenAI-compatible API integrations.</p>
                     <div class="project-tags">
                         <span>JavaScript</span>
@@ -152,20 +159,21 @@
                         <span>UI/UX</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 6 -->
-            <div class="project-card fade-in" data-category="design web">
+            <div class="project-card fade-in" data-category="completed single">
                 <div class="project-img">
                     <img src="https://via.placeholder.com/400x200/0f172a/c084fc?text=Portfolio+v1" alt="Portfolio">
                     <div class="project-img-overlay"></div>
                 </div>
                 <div class="project-content">
                     <h3>Developer Portfolio v1</h3>
+                    <span class="success-tag"><i class="fas fa-chart-line"></i> 100% Success Rate</span>
                     <p>The first iteration of this very portfolio — a responsive single-page site built from scratch in HTML, CSS, and vanilla JavaScript with no frameworks.</p>
                     <div class="project-tags">
                         <span>HTML5</span>
@@ -174,8 +182,8 @@
                         <span>Responsive</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="link-btn">Live Site <i class="fas fa-external-link-alt"></i></a>
-                        <a href="#" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn">Live Site <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/roshan" target="_blank" class="link-btn secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
@@ -199,12 +207,14 @@
         <h2>Let's <span class="gradient-text">Connect</span></h2>
         <p>Like what you see? I'm open to full-time roles, freelance work, and creative collaborations.</p>
         <div class="connect-links">
-            <a href="contacts.html" class="connect-link primary"><i class="fas fa-paper-plane"></i> Send a Message</a>
-            <a href="mailto:roshan@example.com" class="connect-link"><i class="fas fa-envelope"></i> roshan@example.com</a>
+            <a href="media/Roshan_VIshwakarma_Software_Engineering_Resume.pdf" target="_blank" class="connect-link primary" download><i class="fas fa-download"></i>Resume</a>
+            <a href="contacts.html" class="connect-link"><i class="fas fa-paper-plane"></i> Send a Message</a>
+            <a href="mailto:roshanvishwakarma1166@example.com" class="connect-link"><i class="fas fa-envelope"></i> E-Mail</a>
             <a href="https://linkedin.com/in/roshan" target="_blank" class="connect-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
             <a href="https://github.com/roshan" target="_blank" class="connect-link"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-left">

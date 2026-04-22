@@ -45,13 +45,8 @@ if (navbar) {
 }
 
 // ── 2. ACTIVE NAV LINK ────────────────────────────
-const currentFile = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentFile || (currentFile === '' && href === 'index.html')) {
-        link.classList.add('active');
-    }
-});
+// The active class is correctly hardcoded in HTML files to prevent flash of unstyled content.
+// Dynamic active state logic removed to prevent redundancy.
 
 // ── 3. SCROLL-TRIGGERED FADE-IN (staggered) ──────
 const fadeEls = document.querySelectorAll('.fade-in');
@@ -83,8 +78,9 @@ if (filterTabs.length > 0) {
             tab.classList.add('active');
 
             const filter = tab.dataset.filter;
+            let visibleIndex = 0;
 
-            projectCards.forEach((card, i) => {
+            projectCards.forEach((card) => {
                 const cats = card.dataset.category || '';
                 const show = filter === 'all' || cats.includes(filter);
                 if (show) {
@@ -96,7 +92,8 @@ if (filterTabs.length > 0) {
                         card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
                         card.style.opacity = '1';
                         card.style.transform = 'translateY(0)';
-                    }, i * 60);
+                    }, visibleIndex * 60);
+                    visibleIndex++;
                 } else {
                     card.style.display = 'none';
                 }
@@ -164,14 +161,18 @@ if (contactForm) {
             btn.style.background = 'linear-gradient(135deg, #f59e0b, #d97706)';
             btn.style.opacity = '1';
             btn.disabled = false;
+            btn.type = 'button';
 
-            btn.addEventListener('click', () => {
+            const mailtoHandler = () => {
                 window.location.href = 'mailto:roshan@example.com';
-            }, { once: true });
+            };
+            btn.addEventListener('click', mailtoHandler, { once: true });
 
             setTimeout(() => {
                 btn.innerHTML = originalHTML;
                 btn.style.background = '';
+                btn.type = 'submit';
+                btn.removeEventListener('click', mailtoHandler);
             }, 5000);
         }
     });
@@ -226,3 +227,35 @@ window.addEventListener('scroll', () => {
     scrollBtn.style.pointerEvents = show ? 'auto' : 'none';
     scrollBtn.style.transform = show ? 'translateY(0)' : 'translateY(8px)';
 }, { passive: true });
+
+// ── 7. ACCORDION (contacts.html) ──────────────────
+const accordions = document.querySelectorAll('.accordion-header');
+
+if (accordions.length > 0) {
+    accordions.forEach(acc => {
+        acc.addEventListener('click', () => {
+            const content = acc.nextElementSibling;
+            const icon = acc.querySelector('i');
+            
+            // Close all others
+            accordions.forEach(otherAcc => {
+                if (otherAcc !== acc) {
+                    otherAcc.classList.remove('active');
+                    if (otherAcc.querySelector('i')) {
+                        otherAcc.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                    otherAcc.nextElementSibling.style.maxHeight = null;
+                }
+            });
+            
+            acc.classList.toggle('active');
+            if (acc.classList.contains('active')) {
+                if (icon) icon.style.transform = 'rotate(180deg)';
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                if (icon) icon.style.transform = 'rotate(0deg)';
+                content.style.maxHeight = null;
+            }
+        });
+    });
+}

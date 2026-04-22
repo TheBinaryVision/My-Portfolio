@@ -305,3 +305,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     .projects-grid{grid-template-columns:1fr;}
     .connect-link{font-size:0.78rem;padding:0.5rem 0.9rem;}
 }
+
+/* ═══════════════════════════════════════════
+   ACCORDION & NEW TAGS
+═══════════════════════════════════════════ */
+.accordion-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:1rem;background:var(--surface);overflow:hidden;transition:border-color 0.3s;}
+.accordion-item:hover{border-color:var(--border-hover);}
+.accordion-header{padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;background:transparent;border:none;width:100%;text-align:left;color:var(--text);font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;transition:all 0.3s;}
+.accordion-header:hover{background:rgba(78,158,187,0.05);}
+.accordion-header i{color:var(--accent);transition:transform 0.3s;font-size:0.9rem;}
+.accordion-content{max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;background:rgba(5, 3, 10, 0.4);}
+.accordion-body{padding:0 1.5rem 1.5rem;color:var(--text-muted);font-size:0.85rem;line-height:1.7;}
+.success-tag{display:inline-flex;align-items:center;gap:5px;background:var(--success-bg);color:var(--success);padding:0.25rem 0.6rem;border-radius:4px;font-size:0.7rem;font-weight:600;border:1px solid rgba(0, 255, 157, 0.25);margin-bottom:0.7rem;}
